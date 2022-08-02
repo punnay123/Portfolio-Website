@@ -26,15 +26,15 @@
             margin-right: 20px;
         }
         .skills {
-                     background-color: aqua;
+                     background-color: lightskyblue;
                     text-align: left;
                 
         }
         .experience{
-            background-color: aqua;
+            background-color: lightskyblue;
         }
         .education{
-            background-color: aqua;
+            background-color: lightskyblue;
         }
         .footer{
             text-align: center;
@@ -93,10 +93,10 @@
       <!-- Main jumbotron for a primary marketing message or call to action -->
       <div class="jumbotron">
         <div class="container">
-          <img src="punnay.jpg" class="rounded-circle float-left">
+          <img src="Photo Punnay.jpeg" class="rounded-circle float-left">
           <h1 class="display-3">It's Me PUNNAY MITTAL</h1>
-          <p>Hello and Welcome to my Portfolio. I have passion to work in the Web development and learn new technologies. Solution oriented professional, keen to learn and develop so that can work for the development of the environment around him. Skilled in HTML5, CSS, C++, DSA, JavaScript, Public Speaking, Management, etc..</p>
-          <p><a class="btn btn-primary btn-lg" href="Resume1.pdf" role="button">Access My Resume&raquo;</a></p>
+          <p>Hello and Welcome to my Portfolio. I have passion to work in the Software Development & Web development field and learn new technologies. Solution oriented professional, keen to learn and develop so that can work for the development of the environment around him. Skilled in C++, Java, DSA, HTML, CSS, JavaScript, PHP, WordPress, MySql, GitHub and Cloud etc..</p>
+          <p><a class="btn btn-primary btn-lg" href="Resume%20Punnay.pdf" role="button">Access My Resume&raquo;</a></p>
         </div>
       </div>
         <a name="about"></a>
@@ -104,33 +104,38 @@
       <div class="container">
         <!-- Example row of columns -->
         <div class="row">
-                <div class="col-md-4">
-                        <h2>My Skills</h2>
-                   <p>  <ol class="skills">
-             <li>C and C++</li>
-             <li>HTML5 and CSS</li>
-             <li>JavaScript and BootStrap</li>
-             <li>PHP</li>
-             <li>Wordpress</li></ol>
-                    </p>
-            <a class="btn btn-secondary" href="Resume1.pdf" role="button">View details &raquo;</a>
-                      </div>
-                      <div class="col-md-4">
-                        <h2>My Experience</h2>
-                        <p><ul class="experience"><li>Intershalla Student Partner - INTERNSHALLA</li>
-                          <li>Wordpress Developer - DMDT TECHNOLOGIES</li>
-                          <li>Campus Ambassdor - CODING ELEMENTS</li>
-                          </ul>
-                        </p>
-          <a class="btn btn-secondary" href="Resume1.pdf" role="button">View details &raquo;</a>
-                      </div>
-                      <div class="col-md-4">
+                                  <div class="col-md-4">
                         <h2>My Education</h2>
                         <p><ul class="education">
-                          <li>Currently persuing B.Tech in Computer Science at Technological Institute of Textile & Science</li>
-                          <li>Completed 12th and 10th from Baba Banda Bahadur Public School</li></ul></p>
-                        <p><a class="btn btn-secondary" href="Resume1.pdf" role="button">View details &raquo;</a></p>
+                          <li>Currently persuing B.Tech with 8.8 SGPA in Computer Engineering at Technological Institute of Textile & Sciences</li>
+                          <li>Completed 12th with 85% and 10th with 8.6 CGPA from Baba Banda Bahadur Public School</li></ul></p>
+                        <p><a class="btn btn-secondary" href="Resume Punnay.pdf" role="button">View details &raquo;</a></p>
     </div>
+          <div class="col-md-4">
+                        <h2>My Experience</h2>
+                        <p><ul class="experience"><li>Ninja Entrepreneur - Coding Ninjas</li>
+                          <li>Wordpress Developer - DMDT TECHNOLOGIES</li>
+                          <li>Campus Ambassdor - CODING ELEMENTS</li>
+              <li>Intershalla Student Partner - INTERNSHALLA</li>
+                          </ul>
+                        </p>
+          <a class="btn btn-secondary" href="Resume Punnay.pdf" role="button">View details &raquo;</a>
+                      </div>
+                      
+                <div class="col-md-4">
+                        <h2>My Skills</h2>
+                   <p>  <ul class="skills">
+             <li>C and C++</li>
+             <li>HTML and CSS</li>
+             <li>JavaScript and BootStrap</li>
+             <li>PHP and MySql</li>
+             <li>Wordpress</li>
+                    <li>Git and GitHub</li></ul>
+                    </p>
+            <a class="btn btn-secondary" href="Resume Punnay.pdf" role="button">View details &raquo;</a>
+                      </div>
+                      
+                      
         </div>
     
       
@@ -152,7 +157,7 @@
                     <a href="https://github.com/punnay123/Portfolio-Website.git" target="_blank">
                         <div class="project-box resume">
                             <p class="project-details">
-                                Personal Portfolio Website
+                                Personal Portfolio Website.
                             </p>
     
                         </div>
@@ -162,7 +167,7 @@
                     <a href="https://github.com/punnay123/Casper-Matresses.git" target="_blank">
                         <div class="project-box casper">
                             <p class="project-details">
-                                Casper Matress Website based on HTML, CSS and JavaScript.
+                                News with Weather Website.
                             </p>
     
                         </div>
@@ -172,7 +177,7 @@
                     <a href="https://github.com/punnay123/Wall-Clock.git" target="_blank">
                         <div class="project-box clock">
                             <p class="project-details">
-                                Project on Analog Clock Using pure JS.
+                                Analog Clock Using pure JS.
                             </p>
     
                         </div>
@@ -184,7 +189,13 @@
                 </div>
 
 
-            </section><hr>
+            </section>
+
+            <?php
+        if($insert == true){
+        echo "Thanks for submitting your message.";
+        }
+    ?>
       
        <!--Contacts Sections-->
             <section id="contact"  style="background-color: lightgray">
@@ -193,15 +204,17 @@
                     <h1>CONTACT</h3>
                 </div>
 
+                
+
                 <div id="contact-container">
 
                     <div id="contact-form-container">
-                        <form id="contact-form" action="post">
-                            <input id="input-name" name="name" type="text" placeholder="Your Name" required>
-                            <input id="input-email" name="input-email" type="email" required placeholder="Your Email">
-                            <input id="input-contact" name="input-contact" type="number" required placeholder="Your Contact Number">
-                            <textarea id="input-message" name="input-message"  placeholder="Message"></textarea>
-                            <button class="sub-btn" type="submit" onclick="alert('Message Send')">SEND MESSAGE</button>
+                        <form id="contact-form" action="index.php" method="post">
+                            <input id="name" name="name" type="text" placeholder="Your Name" required>
+                            <input id="email" name="email" type="email" required placeholder="Your Email">
+                            <input id="contact" name="contact" type="number" required placeholder="Your Contact Number">
+                            <textarea id="message" name="message"  placeholder="Message"></textarea>
+                            <button class="sub-btn" type="submit">SEND MESSAGE</button>
                         </form>
                     </div>
                     <div id="my-details-container">
@@ -287,7 +300,7 @@
       </section>
 
 <footer class="container">
-      <p class="footer" style="color: darkcyan">&copy; Punnay Mittal. All Rights Reserved</p>
+      <p class="footer">&copy; Punnay Mittal</p>
     </footer>
 
     <!-- Bootstrap core JavaScript
